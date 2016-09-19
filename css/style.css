@@ -136,8 +136,8 @@ p{
 
 #pig #nostrils::before {
 	content: '';
-	width: 0.25em;
-	height: 0.25em;
+	width: 0.3em;
+	height: 0.3em;
 	background-color: #000;
 	border-radius: 1em;
 	position: absolute;
@@ -147,8 +147,8 @@ p{
 
 #pig #nostrils::after {
 	content: '';
-	width: 0.25em;
-	height: 0.25em;
+	width: 0.3em;
+	height: 0.3em;
 	background-color: #000;
 	border-radius: 1em;
 	position: absolute;
@@ -158,8 +158,8 @@ p{
 
 #pig #nose::before {
 	content: '';
-	width: 1.25em;
-	height: 0.75em;
+	width: 1.35em;
+	height: 1em;
 	background-color: #ffe6f7;
 	border-radius: 3em 3em 3em 3em;
 	position: absolute;
@@ -194,7 +194,7 @@ p{
 	content: '';
 	width: 1.5em;
 	height: 1.5em;
-	background-color: #ffb3e6;
+	background-color: #f5f5f5;
 	border-radius: 0 0 50% 0;
 	position: absolute;
 	top: 9.50em;
@@ -207,7 +207,7 @@ p{
 	width: 1.5em;
 	height: 1.5em;
 	background-color: #ffccee;
-	border-radius: 2em 2em 0 0;
+	border-radius: 1em 1em 0 0;
 	position: absolute;
 	top: 9em;
   	left: 9.5em;
@@ -239,25 +239,32 @@ p{
 }
 
 #pig .ears::before {
-	content: '';
-	width: 1em;
-	height: 4em;
-	left: 2em;
-	top: 1em;
-	background-color: #ffb3e6;
-	border-radius: 4em 4em 0 4em;
+  content: '';
+  width: 2.5em;
+  height: 2.5em;
+  overflow: hidden;
+    border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  -webkit-transform:rotate(-45deg);
+  background-color: #ff4dc4;
 	z-index: 150;
 	position: absolute;
 	top: 0.15em;
-	left: 1em;
+	left: 0em;
 }
 
 #pig .ears::after {
-	content: '';
-	width: 1em;
-	height: 4em;
-	background-color: #ffb3e6;
-	border-radius: 4em 4em 0 4em;
+
+  content: '';
+  width: 2.5em;
+  height: 2.5em;
+  overflow: hidden;
+    border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform:rotate(-45deg);
+  background-color: #ff4dc4;
 	z-index: 150;
 	position: absolute;
 	top: 0.15em;
