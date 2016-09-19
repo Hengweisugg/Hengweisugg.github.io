@@ -63,7 +63,7 @@ p{
 #pig #body {
 	width: 8em;
 	height: 13em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 5em 5em 0 0;
 	z-index: 150;
 	position: relative;
@@ -73,7 +73,7 @@ p{
 	content: '';
 	width: 2em;
 	height: 2em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 0 0 1em 1em;
 	position: absolute;
 	top: 12em;
@@ -83,7 +83,7 @@ p{
 	content: '';
 	width: 2em;
 	height: 2em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 0 0 1em 1em;
 	position: absolute;
 	top: 12em;
@@ -141,7 +141,7 @@ p{
 	background-color: #000;
 	border-radius: 1em;
 	position: absolute;
-	top: 3em;
+	top: 3.5em;
 	left: 3em;
 }
 
@@ -152,8 +152,19 @@ p{
 	background-color: #000;
 	border-radius: 1em;
 	position: absolute;
-	top: 3em;
+	top: 3.5em;
 	left: 3.75em;
+}
+
+#pig #nose::before {
+	content: '';
+	width: 1.25em;
+	height: 0.75em;
+	background-color: #ffe6f7;
+	border-radius: 3em 3em 3em 3em;
+	position: absolute;
+	top: 3.25em;
+	left: 2.85em;
 }
 
 #pig #mouth::before {
@@ -163,27 +174,15 @@ p{
 	background-color: #942e58;
 	border-radius: 0 0 3em 3em;
 	position: absolute;
-	top: 3.75em;
+	top: 4.5em;
 	left: 2.85em;
-}
-
-#pig #belly {
-	content: '';
-	width: 5.5em;
-	height: 5.5em;
-	background-color: #f8e393;
-	border-radius: 2em 2em 0 2em;
-	position: absolute;
-	top: 7.5em;
-	left: 0.5em;
-	z-index: 10;
 }
 
 #pig #tail::before {
 	content: '';
 	width: 3em;
 	height: 2.75em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 0 0 2em 0;
 	position: absolute;
 	top: 10em;
@@ -195,7 +194,7 @@ p{
 	content: '';
 	width: 1.5em;
 	height: 1.5em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 0 0 50% 0;
 	position: absolute;
 	top: 9.50em;
@@ -219,7 +218,7 @@ p{
 	content: '';
 	width: 2em;
 	height: 2em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 2em 0 0 2em;
 	position: absolute;
 	top: 5.75em;
@@ -231,7 +230,7 @@ p{
 	content: '';
 	width: 2em;
 	height: 2em;
-	background-color: #ffccee;
+	background-color: #ffb3e6;
 	border-radius: 0 2em 2em 0;
 	position: absolute;
 	top: 5.75em;
@@ -239,19 +238,28 @@ p{
 	z-index: 10;
 }
 
-#pig #flame {
+#pig .ears::before {
 	content: '';
-	width: 2.5em;
-	height: 2.5em;
-	overflow: hidden;
-  	border-bottom-right-radius: 50%;
- 	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;
-	-webkit-transform:rotate(-45deg);
-	background-color: #FFB800;
+	width: 1em;
+	height: 4em;
+	left: 2em;
+	top: 1em;
+	background-color: #ffb3e6;
+	border-radius: 4em 4em 0 4em;
+	z-index: 150;
 	position: absolute;
-	top: 8em;
-	left: 9em;
-	z-index: 300;
+	top: 0.15em;
+	left: 1em;
+}
 
+#pig .ears::after {
+	content: '';
+	width: 1em;
+	height: 4em;
+	background-color: #ffb3e6;
+	border-radius: 4em 4em 0 4em;
+	z-index: 150;
+	position: absolute;
+	top: 0.15em;
+	left: 6em;
 }
